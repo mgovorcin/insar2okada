@@ -61,6 +61,8 @@ guidata(hObject, handles);
 % UIWAIT makes insar2okada wait for user response (see UIRESUME)
 % uiwait(handles.figure1);
 
+current_dir = pwd; %FIX THIS to accept path no matter where you call script from
+addpath([current_dir,'/disloc'])
 
 % --- Outputs from this function are returned to the command line.
 function varargout = insar2okada_OutputFcn(hObject, eventdata, handles) 
